@@ -1,6 +1,6 @@
 FROM php:7.3-fpm
 
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
+COPY --from=composer:1.10.22 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /www
 
